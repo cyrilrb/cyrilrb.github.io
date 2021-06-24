@@ -1,6 +1,5 @@
 # cyrilrb.github.io
-Drop location to put visualization for easier access for presentation
-
+Drop location to put visualization for easier access for presentation.
 
 Files work up data from draft.csv that has 12,140 entries that documents every draft pick from 1977. 
 
