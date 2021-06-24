@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>ATL Draft Results 2k-2k10</title>
-
+<!-- Coding from: https://bl.ocks.org/AntonOrlov/6b42d8676943cc933f48a43a7c7e5b6c -->
 
 <style>
   /* Header formating (Start) */
@@ -86,10 +86,10 @@ const PI = Math.PI,
   numTicks = 10;
 
 
-d3.csv('Draft Results.csv', (error, data) => {
+d3.csv('Draft Results2.csv', (error, data) => {
 
   let scale = d3.scaleLinear()
-    .domain([0, d3.max(data, d => d.count) * 1.9])
+    .domain([0, d3.max(data, d => d.count) * 1.1])
     .range([0, 2 * PI]);
 
   let ticks = scale.ticks(numTicks).slice(0, -1);
@@ -179,9 +179,6 @@ d3.csv('Draft Results.csv', (error, data) => {
   function getOuterRadius(index) {
     return getInnerRadius(index) + arcWidth;
   }
-
-  // attempt to make a legend
-
 
 
 });
